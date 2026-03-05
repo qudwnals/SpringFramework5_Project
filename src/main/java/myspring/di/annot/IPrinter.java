@@ -1,4 +1,4 @@
-package myspring.di.xml.annot;
+package myspring.di.annot;
 
 public interface IPrinter {
 	public void print(String message);

@@ -9,4 +9,6 @@
 	
 	<context:component-scan base-package="myspring.di.annot" />
 	
+		<!-- values.properties 파일정보를 설정  -->
+	<context:property-placeholder location="classpath:values.properties" />
 </beans>
