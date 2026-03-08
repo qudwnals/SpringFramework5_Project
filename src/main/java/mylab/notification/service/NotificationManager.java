@@ -1,7 +1,8 @@
 package mylab.notification.service;
 
 public class NotificationManager {
-
+	
+	 // 이메일/SMS 서비스를 중앙에서 관리하기 위한 의존성
     private final EmailNotificationService emailService;
     private final SmsNotificationService smsService;
 
@@ -19,10 +20,12 @@ public class NotificationManager {
     }
 
     public void sendNotificationByEmail(String message) {
-        emailService.sendNotification(message);
+    	// 이메일 서비스로 위임
+    	emailService.sendNotification(message);
     }
 
     public void sendNotificationBySms(String message) {
-        smsService.sendNotification(message);
+    	 // SMS 서비스로 위임
+    	smsService.sendNotification(message);
     }
 }

@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(locations = "classpath:mylab-user-di.xml")
 public class UserServiceTest {
-
+	 // 스프링 테스트 컨텍스트에서 UserService Bean 주입
     @Autowired
     private UserService userService;
 
